@@ -1,32 +1,35 @@
+
 body {
-    font-family: Arial,sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: #f4f4f4;
 }
+
+
 header {
     background-color: #333;
     color: white;
     padding: 20px 0;
 }
 .logo {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
 }
 .tagline {
     font-size: 16px;
-    margin-top: 5px;
-}
-.about {
-
-        background-color: #fff;
-        padding: 50px 20px;
-        text-align: center;
-}
-.about-container {
     max-width: 800px;
-    margin: auto;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+
+.about {
+    background-color: #fff;
+    padding: 50px 20px;
+}
+.my-img {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,75 +37,70 @@ header {
 .profile-pic {
     width: 150px;
     height: 150px;
-    border-radius: 50;
+    border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
 }
-.about-text{
+.about-text {
     max-width: 600px;
     background-color: #f9f9f9;
-    padding: 40px 20px;
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 800px;
-    margin: 20px auto;
 }
-.about-text h2{
-    font-size: 26px;
+.about-text h2 {
+    font-size: 24px;
     color: #333;
     margin-bottom: 10px;
 }
-.about-text p{
+.about-text p {
     font-size: 16px;
     color: #555;
     line-height: 1.6;
 }
-#skills{
+
+#skills {
     background-color: #f9f9f9;
     padding: 50px 20px;
-    text-align: center;
 }
-.skills h2{
-   font-size: 28px;
-   margin-bottom: 20px;
-   color: #333;
+#skills h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
 }
-.skills-list{
+.skills-list {
     list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
 }
 .skills-list li {
-   font-size: 18px;
-   font-weight: bold;
-   color: #fff;
-   background-color: #333;
-   padding: 10px 20px;
-   border-radius: 8px;
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-   transition: transform 0.3s ease-in-out,background ;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background 0.3s;
 }
-
-.skills-list li:hover{
+.skills-list li:hover {
     transform: scale(1.05);
     background-color: #0073e6;
 }
-#projects {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    text-align: center;
 
+#projects {
+    background-color: #fff;
+    padding: 50px 20px;
 }
 #projects h2 {
     font-size: 28px;
     margin-bottom: 20px;
 }
-.project-container {
+.projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -110,9 +108,9 @@ header {
 }
 .project {
     background-color: white;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 300px;
     transition: transform 0.3s ease-in-out;
@@ -136,8 +134,7 @@ header {
     margin: 10px 0;
 }
 .project a {
-    display: inline;
-    margin-top: 10px;
+    display: inline-block;
     text-decoration: none;
     color: white;
     background-color: #333;
@@ -146,21 +143,20 @@ header {
     transition: background 0.3s;
 }
 .project a:hover {
-    background-color: #555;
+    background-color: #0073e6;
 }
+
+
 #resume {
-    background-color: #fff;
+    background-color: #f9f9f9;
     padding: 50px 20px;
-    text-align: center;
 }
 #resume h2 {
     font-size: 28px;
-    margin-bottom: 10px;
 }
 #resume p {
     font-size: 16px;
     color: #555;
-    margin-bottom: 20px;
 }
 .resume-btn {
     display: inline-block;
@@ -173,21 +169,20 @@ header {
     transition: background 0.3s;
 }
 .resume-btn:hover {
-    background-color: #555;
+    background-color: #0073e6;
 }
+
+
 #contact {
-    background-color: #f9f9f9;
+    background-color: #fff;
     padding: 50px 20px;
-    text-align: center;
 }
 #contact h2 {
     font-size: 28px;
-    margin-bottom: 10px;
 }
 .contact-info p {
     font-size: 18px;
     margin: 5px 0;
-
 }
 .contact-info a {
     color: #333;
@@ -197,7 +192,6 @@ header {
 .contact-info a:hover {
     color: #0073e6;
 }
-
 .social-links {
     margin-top: 20px;
 }
@@ -214,27 +208,32 @@ header {
 .social-links a:hover {
     background-color: #0073e6;
 }
+
+
 footer {
-    background-color: #333;
+    background-color: #777;
     color: white;
     text-align: center;
     padding: 15px 0;
-    font-size: 14px;
-    position:relative;
+    font-size: 25px;
+    position: relative;
     bottom: 0;
     width: 100%;
+
+
 }
 .footer-links {
-    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
 }
 .footer-links a {
-    color: white;
     text-decoration: none;
-    margin: 0 10px;
+    color: white;
+    font-weight: bold;
     transition: color 0.3s;
 }
 .footer-links a:hover {
-    color: #0073e6;
+    color: #67a568;
 }
-
-
